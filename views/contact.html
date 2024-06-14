@@ -15,17 +15,74 @@
 
         <nav>
             <a href="/about">About Us</a>
-            <a href="#">Espresso Machine</a>
-            <a href="#">Espresso Grinder</a>
+            <a onclick="showOverlay('machines')">Espresso Machine</a>
+            <a href="/grinders">Espresso Grinder</a>
             <a href="/beans">Beans</a>
-            <a href="/accessories">Accessories</a>
+            <a onclick="showOverlay('accessories')">Accessories</a>
             <a href="#">Service & Training</a>
             <a href="/contact">Contact Us</a>
         </nav>
     </header>
 
-    <section>
-        <h1>Contact</h1>
-    </section>
+    <div class="container">
+        <div class="overlay overlay-machines">
+            <div class="overlay-text">
+                <h1>Our Range</h1> <br>
+                <p>At Barista Garage, we pride ourselves on being the epitome of comprehensive coffee solutions, offering a one-stop destination for a diverse array of consumers. Whether you are a discerning homeowner, managing a bustling office, or overseeing a large-scale business operation, Barista Garage is your unwavering partner in meeting all your coffee-related needs.</p>
+            </div>
+    
+            <div class="overlay-options">
+                <div class="overlay-option">
+                    <img src="https://baristagarage.com/Image/bar.jpeg" alt="Commercial Espresso Machines">
+                    <h3>Commercial Espresso Machines</h3>
+                </div>
+    
+                <div class="overlay-option">
+                    <img src="https://baristagarage.com/Image/tools.jpg" alt="Coffee Vending Machines">
+                    <h3>Coffee Vending Machines</h3>
+                </div>
+    
+                <div class="overlay-option">
+                    <img src="https://baristagarage.com/Image/e.jpg" alt="Capsule Coffee Machines">
+                    <h3>Capsule Coffee Machines</h3>
+                </div>
+            </div>
+        </div>
+    
+        <div class="overlay overlay-accessories">
+            <div class="overlay-text">
+                <h1>Our Range</h1> <br>
+                <p>At Barista Garage, we pride ourselves on being the epitome of comprehensive coffee solutions, offering a one-stop destination for a diverse array of consumers. Whether you are a discerning homeowner, managing a bustling office, or overseeing a large-scale business operation, Barista Garage is your unwavering partner in meeting all your coffee-related needs.</p>
+            </div>
+    
+            <div class="overlay-options">
+                <div class="overlay-option">
+                    <img src="https://baristagarage.com/Image/bar.jpeg" alt="Bar Blender">
+                    <h3>Bar Blender</h3>
+                </div>
+    
+                <div class="overlay-option">
+                    <img src="https://baristagarage.com/Image/tools.jpg" alt="Barista Tools">
+                    <h3>Barista Tools</h3>
+                </div>
+    
+                <div class="overlay-option">
+                    <img src="https://baristagarage.com/Image/e.jpg" alt="Personal Coffee Gear">
+                    <h3>Personal Coffee Gear</h3>
+                </div>
+    
+                <div class="overlay-option">
+                    <img src="https://baristagarage.com/Image/personal.jpeg" alt="Coffee Shop Essesntials">
+                    <h3>Coffee Shop Essesntials</h3>
+                </div>
+            </div>
+        </div>
+    
+        <section>
+            <h1>Contact</h1>
+        </section>
+    </div>
+
+    <script src="./scripts/header.js"></script>
 </body>
 </html>

@@ -13,6 +13,19 @@ header {
   flex-direction: row;
   height: 150px;
   background: white;
+  position: fixed;
+  width: 100vw;
+  z-index: 99998;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  -moz-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
+.container {
+  padding-top: 150px;
 }
 
 header img {
@@ -30,6 +43,7 @@ nav a {
   font-size: small;
   color: #676767;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 nav a:hover {
@@ -46,12 +60,23 @@ hr {
   gap: 3rem;
   justify-content: center;
   align-items: center;
-  background: white;
+  background: hsla(0, 0%, 100%, 0.747);
+  backdrop-filter: blur(1.5rem);
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
 }
 
 .overlay-text {
   max-width: 400px;
   text-align: justify;
+}
+
+.overlay-text h1 {
+  color: #10548c;
+  font-weight: lighter;
 }
 
 .overlay-options {
@@ -69,12 +94,17 @@ hr {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: white;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .overlay-option img {
   width: 150px;
+}
+
+.overlay-option h3 {
+  font-weight: lighter;
 }
 
 .overlay-option:hover {
