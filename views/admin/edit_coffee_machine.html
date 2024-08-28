@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Coffee Machine</title>
+    <link rel="stylesheet" href="../../styles/globals.css" />
+    <link rel="stylesheet" href="../../styles/admin/product.css" />
+  </head>
+  <body>
+    <div class="admin-header">
+      <a href="/admin">
+        <img src="../../assets/logo.png" alt="Barista Garage Logo" />
+        <h1>Dashboard</h1>
+      </a>
+    </div>
+
+    <div class="container">
+      <h1>Edit Coffee Machine</h1>
+
+      <form method="post" enctype="multipart/form-data">
+        <section>
+          <h3>General Information</h3>
+
+          <div class="input-field">
+            <label for="name">Product Name:</label>
+            <input type="text" name="product_name" class="product_name" />
+          </div>
+
+          <div class="input-field">
+            <label for="category">Product Catergory:</label>
+
+            <select name="category" class="category">
+              <option value="Commercial Espresso Machine">
+                Commercial Espresso Machine
+              </option>
+              <option value="Coffee Vending Machine">
+                Coffee Vending Machine
+              </option>
+              <option value="Capsule Coffee Machine">
+                Capsule Coffee Machine
+              </option>
+            </select>
+          </div>
+
+          <div class="input-field">
+            <label for="image">Product Image:</label>
+            <input type="file" name="image" class="image" />
+          </div>
+
+          <div class="input-field">
+            <label for="brochure">Product Brochure:</label>
+            <input type="file" name="brochure" class="brochure" />
+          </div>
+
+          <div class="input-field">
+            <label for="description">Description:</label>
+            <textarea
+              type="text"
+              name="description"
+              class="description"
+            ></textarea>
+          </div>
+        </section>
+
+        <section>
+          <h3>Specifications</h3>
+
+          <div class="input-field">
+            <label for="version">Version:</label>
+            <input type="text" name="version" class="version" />
+          </div>
+
+          <div class="input-field">
+            <label for="user_interface">User Interface:</label>
+            <input type="text" name="user_interface" class="user_interface" />
+          </div>
+
+          <div class="input-field">
+            <label for="canisters">Number of Canisters:</label>
+            <input type="text" name="canisters" class="canisters" />
+          </div>
+
+          <div class="input-field">
+            <label for="mixing_blows">Number of Mixing blows:</label>
+            <input type="text" name="mixing_blows" class="mixing_blows" />
+          </div>
+
+          <div class="input-field">
+            <label for="coffee_brewer">Coffee Brewer:</label>
+            <input type="text" name="coffee_brewer" class="coffee_brewer" />
+          </div>
+
+          <div class="input-field">
+            <label for="boilers">Number of Boilers:</label>
+            <input type="text" name="boilers" class="boilers" />
+          </div>
+
+          <div class="input-field">
+            <label for="height">Height:</label>
+            <input type="text" name="height" class="height" />
+          </div>
+
+          <div class="input-field">
+            <label for="width">Weight:</label>
+            <input type="text" name="weight" class="weight" />
+          </div>
+
+          <div class="input-field">
+            <label for="depth">Depth:</label>
+            <input type="text" name="depth" class="depth" />
+          </div>
+
+          <div class="input-field">
+            <label for="power_consumption">Power Consumption:</label>
+            <input
+              type="text"
+              name="power_consumption"
+              class="power_consumption"
+            />
+          </div>
+
+          <div class="input-field">
+            <label for="frequency">Frequency:</label>
+            <input type="text" name="frequency" class="frequency" />
+          </div>
+
+          <div class="input-field">
+            <label for="beans_capacity">Beans Capacity:</label>
+            <input type="text" name="beans_capacity" class="beans_capacity" />
+          </div>
+
+          <div class="input-field">
+            <label for="height_delivery_area">Height Delivery Area:</label>
+            <input
+              type="text"
+              name="height_delivery_area"
+              class="height_delivery_area"
+            />
+          </div>
+        </section>
+
+        <button
+          type="submit"
+          onclick="submitForm(event)"
+          class="submit"
+          disabled
+        >
+          Confirm Edits
+        </button>
+        <button class="delete">Delete</button>
+      </form>
+    </div>
+
+    <script src="../../scripts/admin/edit-coffee-machine.js"></script>
+  </body>
+</html>

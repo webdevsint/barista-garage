@@ -1,0 +1,132 @@
+main {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+  padding-inline: 3rem;
+}
+
+.hero-text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-text h1 {
+  color: #04662d;
+  font-weight: 200;
+}
+
+.hero-text p {
+  font-weight: 200;
+  text-align: justify;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-button {
+  padding: 0.7rem 1.5rem;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 2px;
+  transition: 0.1s;
+  text-transform: uppercase;
+}
+
+.hero-button:hover {
+  color: white;
+  background: #04662d;
+}
+
+.hero img {
+  height: 400px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 2rem;
+}
+
+.specifications-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.specifications {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 4px;
+}
+
+.specification-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.specification-list .item:nth-child(odd) {
+  background: #f1f1f1;
+}
+
+.specification-list .item {
+  padding: 8px 16px;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  border-radius: 2px;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero img {
+    height: auto;
+    width: 300px;
+  }
+
+  .hero .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero img {
+    width: 250px;
+  }
+
+  .hero {
+    padding: 0;
+  }
+
+  .specifications {
+    padding: 1rem;
+  }
+
+  .specification-list .item {
+    overflow-x: scroll;
+  }
+
+  .specification-list .item p {
+    text-align: right;
+  }
+}

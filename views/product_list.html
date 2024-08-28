@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barista Garage</title>
+
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <link rel="stylesheet" href="/styles/product_list.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="/"><img src="/assets/logo.png" alt="Barista Garage logo" /></a>
+
+      <nav data-visible="false">
+        <a href="/about">About Us</a>
+        <a class="overlay-nav" onclick="showOverlay('machines')"
+          >Espresso Machine</a
+        >
+        <a class="hidden-nav" href="/espresso-machines">Espresso Machine</a>
+        <a href="/coffee-grinders">Espresso Grinder</a>
+        <a href="/products/beans">Beans</a>
+        <a class="overlay-nav" onclick="showOverlay('accessories')"
+          >Accessories</a
+        >
+        <a class="hidden-nav" href="/accessories">Accessories</a>
+        <!-- <a href="#">Service & Training</a> -->
+        <a href="/contact">Contact Us</a>
+
+        <button class="close-toggle" aria-controls="navigation">
+          <i style="color: white" class="fas fa-window-close"></i>
+        </button>
+      </nav>
+
+      <button class="nav-toggle" aria-controls="navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <div class="container">
+      <div class="overlay overlay-machines">
+        <div class="overlay-text">
+          <h1>Our Range</h1>
+          <br />
+          <p>
+            At Barista Garage, we pride ourselves on being the epitome of
+            comprehensive coffee solutions, offering a one-stop destination for
+            a diverse array of consumers. Whether you are a discerning
+            homeowner, managing a bustling office, or overseeing a large-scale
+            business operation, Barista Garage is your unwavering partner in
+            meeting all your coffee-related needs.
+          </p>
+        </div>
+
+        <div class="overlay-options">
+          <a href="/coffee-machines/commercial-espresso-machines">
+            <div class="overlay-option">
+              <img
+                src="/assets/commercial-espresso-machine.webp"
+                alt="Commercial Espresso Machines"
+              />
+              <h3>Commercial Espresso Machines</h3>
+            </div>
+          </a>
+
+          <a href="/coffee-machines/coffee-vending-machines">
+            <div class="overlay-option">
+              <img
+                src="/assets/coffee-vending-machine.png"
+                alt="Coffee Vending Machines"
+              />
+              <h3>Coffee Vending Machines</h3>
+            </div>
+          </a>
+
+          <a href="/coffee-machines/capsule-coffee-machines">
+            <div class="overlay-option">
+              <img
+                src="/assets/capsule-coffee-machine.jpg"
+                alt="Capsule Coffee Machines"
+              />
+              <h3>Capsule Coffee Machines</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="overlay overlay-accessories">
+        <div class="overlay-text">
+          <h1>Our Range</h1>
+          <br />
+          <p>
+            At Barista Garage, we pride ourselves on being the epitome of
+            comprehensive coffee solutions, offering a one-stop destination for
+            a diverse array of consumers. Whether you are a discerning
+            homeowner, managing a bustling office, or overseeing a large-scale
+            business operation, Barista Garage is your unwavering partner in
+            meeting all your coffee-related needs.
+          </p>
+        </div>
+
+        <div class="overlay-options">
+          <a href="/products/bar-blenders">
+            <div class="overlay-option">
+              <img src="/assets/bar-blender.jpeg" alt="Bar Blenders" />
+              <h3>Bar Blenders</h3>
+            </div>
+          </a>
+
+          <a href="/products/barista-tools">
+            <div class="overlay-option">
+              <img src="/assets/barista-tools.jpg" alt="Barista Tools" />
+              <h3>Barista Tools</h3>
+            </div>
+          </a>
+
+          <a href="/products/personal-coffee-gears">
+            <div class="overlay-option">
+              <img src="/assets/coffee-gear.jpg" alt="Personal Coffee Gear" />
+              <h3>Personal Coffee Gear</h3>
+            </div>
+          </a>
+
+          <a href="/products/coffee-shop-essentials">
+            <div class="overlay-option">
+              <img
+                src="/assets/coffee-shop-essentials.jpeg"
+                alt="Coffee Shop Essesntials"
+              />
+              <h3>Coffee Shop Essesntials</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="heading">
+        <h1 class="category"></h1>
+      </div>
+
+      <div class="product-container">
+        <section class="category-list">
+          <h3>Product Categories</h3>
+
+          <p>Coffee Machines</p>
+
+          <a href="/coffee-machines/commercial-espresso-machines"
+            >Commercial Espresso Machines</a
+          >
+          <a href="/coffee-machines/coffee-vending-machines"
+            >Coffee Vending Machines</a
+          >
+          <a href="/coffee-machines/capsule-coffee-machines"
+            >Capsule Coffee Machines</a
+          >
+
+          <hr />
+          <a href="/coffee-grinders">Espresso Grinders</a>
+          <hr />
+
+          <p>Accessories</p>
+
+          <a href="/products/bar-blenders">Bar Blenders</a>
+          <a href="/products/barista-tools">Barista Tools</a>
+          <a href="/products/personal-coffee-gears">Personal Coffee Gear</a>
+          <a href="/products/coffee-shop-essentials">Coffee Shop Essesntials</a>
+          <a href="/products/ice-machines">Ice Machines</a>
+
+          <hr />
+
+          <a href="/products/beans">Beans</a>
+        </section>
+
+        <main class="product-grid"></main>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        
+        <div class="center">
+          <div class="footer-contact-section">
+            <div class="contact">
+              <div>
+                <h3><i class="fa-solid fa-location-dot"></i> Find Us</h3>
+                <p>
+                  House 19 Road 6/A, Sector 12, <br />
+                  Uttara, Dhaka 1230
+                </p>
+              </div>
+            </div>
+  
+            <a href="tel:+8801828097777">
+              <div class="contact">
+                <div>
+                  <h3><i class="fa-solid fa-phone"></i> Call Us</h3>
+                  <p>01828097777</p>
+                </div>
+              </div>
+            </a>
+  
+            <a href="mailto:baristagaragebd@gmail.com">
+              <div class="contact">
+                <div>
+                  <h3><i class="fa-solid fa-envelope"></i> Mail Us</h3>
+                  <p>baristagaragebd@gmail.com</p>
+                </div>
+              </div>
+            </a>
+  
+            <a
+              href="https://baristagarage.com/facebook.com/profile.php?id=61551803092494"
+              target="_blank"
+            >
+              <div class="contact">
+                <div>
+                  <h3><i class="fa-brands fa-square-facebook"></i> Follow Us</h3>
+                  <p>Barista Garage</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <section class="center">
+            <img src="/assets/logo.png" alt="Logo" />
+            <p>
+              Unleash Your Inner Barista: Elevate Your Brew with Barista Garage
+              – Your Ultimate Destination for Premium Coffee Machines &
+              Accessories!
+            </p>
+        </section>
+      </div>
+
+      <div class="copyright">
+        <p>
+          &copy; Developed by
+          <a href="https://instagram.com/nehan_yaser/">Nehan Yaser</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="/scripts/header.js"></script>
+    <script src="/scripts/product-list.js"></script>
+  </body>
+</html>

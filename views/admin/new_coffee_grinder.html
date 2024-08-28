@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add New Coffee Grinder</title>
+    <link rel="stylesheet" href="../../styles/globals.css" />
+    <link rel="stylesheet" href="../../styles/admin/product.css" />
+  </head>
+  <body>
+    <div class="admin-header">
+      <a href="/admin">
+        <img src="../../assets/logo.png" alt="Barista Garage Logo" />
+        <h1>Dashboard</h1>
+      </a>
+    </div>
+
+    <div class="container">
+      <h1>Add New Coffee Grinder</h1>
+
+      <form
+        action="/api/coffee-grinders"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <section>
+          <h3>General Information:</h3>
+
+          <div class="input-field">
+            <label for="name">Product Name:</label>
+            <input
+              type="text"
+              name="product_name"
+              class="product_name"
+              required
+            />
+          </div>
+
+          <div class="input-field">
+            <label for="image">Product Image:</label>
+            <input type="file" name="image" class="image" required />
+          </div>
+
+          <div class="input-field">
+            <label for="brochure">Product Brochure:</label>
+            <input type="file" name="brochure" class="brochure" />
+          </div>
+
+          <div class="input-field">
+            <label for="description">Description:</label>
+            <textarea
+              type="text"
+              name="description"
+              class="description"
+              required
+            ></textarea>
+          </div>
+        </section>
+
+        <section>
+          <h3>Specifications</h3>
+
+          <div class="input-field">
+            <label for="version">Version:</label>
+            <input type="text" name="version" class="version" />
+          </div>
+
+          <div class="input-field">
+            <label for="user_interface">User Interface:</label>
+            <input type="text" name="user_interface" class="user_interface" />
+          </div>
+
+          <div class="input-field">
+            <label for="canisters">Number of Canisters:</label>
+            <input type="text" name="canisters" class="canisters" />
+          </div>
+
+          <div class="input-field">
+            <label for="mixing_blows">Number of Mixing blows:</label>
+            <input type="text" name="mixing_blows" class="mixing_blows" />
+          </div>
+
+          <div class="input-field">
+            <label for="height">Height:</label>
+            <input type="text" name="height" class="height" />
+          </div>
+
+          <div class="input-field">
+            <label for="width">Weight:</label>
+            <input type="text" name="weight" class="weight" />
+          </div>
+
+          <div class="input-field">
+            <label for="depth">Depth:</label>
+            <input type="text" name="depth" class="depth" />
+          </div>
+
+          <div class="input-field">
+            <label for="power_consumption">Power Consumption:</label>
+            <input
+              type="text"
+              name="power_consumption"
+              class="power_consumption"
+            />
+          </div>
+
+          <div class="input-field">
+            <label for="beans_capacity">Beans Capacity:</label>
+            <input type="text" name="beans_capacity" class="beans_capacity" />
+          </div>
+        </section>
+
+        <button type="submit">Submit Form</button>
+      </form>
+    </div>
+  </body>
+</html>

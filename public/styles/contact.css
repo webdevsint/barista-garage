@@ -1,0 +1,87 @@
+section {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 4px;
+  height: 500px;
+}
+
+section form h2 {
+  margin-bottom: 1rem;
+}
+
+section label {
+  margin-block: 0.5rem;
+  display: block;
+}
+
+section input,
+section textarea {
+  padding: 8px;
+  width: 100%;
+  border:1px solid black;
+  border-radius: 3px;
+  outline: none;
+  resize: none;
+}
+
+section textarea {
+  height: 100px;
+}
+
+.button {
+  color: white;
+  background: #04662d;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.1s;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background: white;
+  color: black;
+}
+
+iframe {
+  width: 50%;
+  height: 500px;
+  margin: 0;
+  margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+@media (max-width: 750px) {
+  section {
+    flex-direction: column-reverse;
+  }
+
+  iframe {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  section form {
+    width: 100%;
+  }
+}

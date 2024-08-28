@@ -1,0 +1,151 @@
+.heading {
+  padding: 3rem;
+  background: #f4f4f4;
+}
+
+.heading h1 {
+  color: #04662d;
+  font-weight: lighter;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+}
+
+.category-list h3 {
+  margin-bottom: 1rem;
+}
+
+.category-list {
+  margin: 3rem;
+  padding: 3rem 2rem;
+  width: 25vw;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  height: max-content;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.child {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.category-list a {
+  color: #04662d;
+}
+
+main {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+}
+
+/* .product-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.product-grid h2 {
+  grid-column: span 3;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  color: white;
+  background: #ff00009c;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 4px;
+}
+
+.product-grid h2 i {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.grid-item {
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.1s;
+  cursor: pointer;
+  text-align: center;
+  width: 250px;
+  height: 400px;
+}
+
+.grid-item h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  transition: 0.1s;
+  color: black;
+}
+
+
+.grid-item:hover h3 {
+  color: white;
+}
+
+.grid-item img {
+  transition: 0.15s;
+  width: 150px;
+  background: white;
+}
+
+.grid-item:hover {
+  background: #04662d;
+  color: white;
+}
+
+.grid-item:hover img {
+  width: 180px;
+}
+
+@media (max-width: 1180px) {
+  .category-list {
+    width: 300px;
+  }
+
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 1rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .grid-item {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .product-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .category-list {
+    width: 100%;
+    margin: 0 1rem;
+    padding: 3rem 2rem;
+  }
+}

@@ -1,0 +1,190 @@
+body {
+  background: url("../../assets/banner.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+}
+
+.container {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+a {
+  color: #04662d;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.create-menu a:hover,
+.shortcut-menu a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 4px;
+}
+
+.logout:hover {
+  background: #f1f1f1;
+}
+
+.logout,
+.create-menu,
+.shortcut-menu {
+  padding: 2rem;
+  width: 300px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 4px;
+}
+
+h2 {
+  color: white;
+}
+
+main,
+.coffee-machines,
+.coffee-grinders,
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+main a {
+  color: black;
+}
+
+main p {
+  color: white;
+}
+
+.search {
+  display: flex;
+}
+
+.search input {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 4px 0 0 4px;
+}
+
+.search button {
+  margin-top: 0.5rem;
+  padding: 1rem 2rem;
+  outline: none;
+  border-radius: 0 4px 4px 0;
+  border: 2px solid black;
+  border-left: 0;
+  cursor: pointer;
+  background: #04662d;
+  color: white;
+  transition: 0.1s;
+}
+
+.search button:hover {
+  color: black;
+  background: #f1f1f1;
+}
+
+.search input,
+.search button {
+  height: 50px;
+}
+.search-results {
+  display: none;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.search-result {
+  display: flex;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 2px;
+  transition: 0.1s;
+}
+
+.search-result:hover {
+  background: #f1f1f1;
+}
+
+.search-result img {
+  height: 80px;
+  margin: 1rem;
+  background: white;
+  border-radius: 2px;
+}
+
+.search-result section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.search-result p {
+  color: black;
+}
+
+.product {
+  display: flex;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 4px;
+  align-items: center;
+  transition: 0.1s;
+}
+
+.product img {
+  background: white;
+  margin: 1rem;
+  height: 100px;
+  width: 100px;
+  border-radius: 4px;
+}
+
+.product-info {
+  margin-inline: 2rem;
+}
+
+.product-info h3 {
+  margin-top: 0.5rem;
+}
+
+.product-info p {
+  color: black;
+}
+
+.product:hover {
+  background: #f1f1f1;
+  cursor: pointer;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../../styles/globals.css" />
+    <link rel="stylesheet" href="../../styles/admin/dashboard.css" />
+  </head>
+  <body>
+    <div class="admin-header">
+      <a href="/admin">
+        <img src="../../assets/logo.png" alt="Barista Garage Logo" />
+        <h1>Dashboard</h1>
+      </a>
+    </div>
+
+    <div class="container">
+      <section class="link-container">
+        <a href="/logout">
+          <div class="logout"><h4>Logout</h4></div>
+        </a>
+        <div class="create-menu">
+          <h3>Add a New Product</h3>
+          <a href="/admin/new/coffee-machine">Add New Coffee Machine</a>
+          <a href="/admin/new/coffee-grinder">Add New Coffee Grinder</a>
+          <a href="/admin/new/product">Add Other Product</a>
+        </div>
+
+        <div class="shortcut-menu">
+          <h3>Jump to Section</h3>
+          <a href="#coffee-machines">Coffee Machines</a>
+          <a href="#coffee-grinders">Coffee Grinders</a>
+          <a href="#products">Other Products</a>
+        </div>
+      </section>
+
+      <main>
+        <div class="search-container">
+          <p>Filter by Product Name:</p>
+          <div class="search">
+            <input type="text" class="search" placeholder="...." />
+            <button onclick="search()">Search</button>
+          </div>
+
+          <div class="search-results"></div>
+        </div>
+
+        <h2 id="coffee-machines">Coffee Machines</h2>
+        <div class="coffee-machines"></div>
+
+        <h2 id="coffee-grinders">Coffee Grinders</h2>
+        <div class="coffee-grinders"></div>
+
+        <h2 id="products">Other Products</h2>
+        <div class="products"></div>
+      </main>
+    </div>
+
+    <script src="../../scripts/admin/dashboard.js"></script>
+  </body>
+</html>
